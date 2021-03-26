@@ -25,7 +25,7 @@ SECRET_KEY = 'dlqgn5)t=lx5%)q((c2u+6i%f=hi490_+1o3z0-%-mp^+$a&d7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://hannubitlyclone.herokuapp.com/']
 
 
 # Application definition
