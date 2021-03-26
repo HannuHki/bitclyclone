@@ -77,7 +77,11 @@ WSGI_APPLICATION = 'bitlyclone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'd3vpf5hsrd63ng',
+        'USER': 'udizstwmcnwjwc',
+        'PASSWORD': '58a491bad4b86e57a7fb02227da40d976b7f78db626ee1908c471955f5cf23be',
+        'HOST': 'ec2-54-155-87-214.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -114,8 +118,22 @@ USE_L10N = True
 
 USE_TZ = True
 
+import os
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.1/howto/static-files/
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
